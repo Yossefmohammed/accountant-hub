@@ -6,7 +6,7 @@ Built for the **Vibe Coder / Solo Full-Stack Developer** assessment.
 
 ## Live demo
 
-> Deploy to Vercel (or similar) and add your URL here after deployment.
+> https://accountant-hub-woad.vercel.app
 
 ## Test credentials
 
@@ -21,10 +21,10 @@ Built for the **Vibe Coder / Solo Full-Stack Developer** assessment.
 | -------- | ------------------------------------------- |
 | Frontend | Next.js 15 (App Router), React 19, CSS Modules |
 | Backend  | Next.js API Routes                          |
-| Database | SQLite via Prisma (MySQL-ready schema)      |
+| Database | PostgreSQL via Prisma (Neon)                |
 | Auth     | JWT in HTTP-only cookie, bcrypt passwords   |
 
-**Why not Laravel + MySQL?** The task allows another stack when explained. Next.js full-stack keeps one codebase, typed API routes, and simple deployment (e.g. Vercel + SQLite file or PlanetScale/MySQL). The Prisma schema maps cleanly to the suggested entities.
+**Why not Laravel + MySQL?** The task allows another stack when explained. Next.js full-stack keeps one codebase, typed API routes, and simple deployment on Vercel. The Prisma schema maps cleanly to the suggested entities.
 
 ## Features
 
@@ -58,7 +58,7 @@ Built for the **Vibe Coder / Solo Full-Stack Developer** assessment.
 cd vibecoder_task
 npm install
 cp .env.example .env
-# Edit .env — set JWT_SECRET to a long random string
+# Edit .env — set JWT_SECRET and DATABASE_URL
 npm run db:push
 npm run db:seed
 npm run dev
@@ -107,28 +107,8 @@ npm start
 
 - Only **accountants** register; companies/clients do not log in — jobs are seeded.
 - Job `status` is `open` or `closed` (lowercase in DB, displayed capitalized).
-- SQLite is used locally for zero-config setup; switch `provider` and `DATABASE_URL` in Prisma for MySQL.
+- PostgreSQL used in production via Neon free tier.
 - Attachments are described in text only (no file upload).
 - Currency is USD.
 
 ## Project structure
-
-```
-src/
-  app/           # Pages + API routes
-  components/    # UI (Header, JobCard, filters, forms)
-  lib/           # Auth, Prisma, jobs query, API helpers
-prisma/          # Schema + seed
-```
-
-## Deployment (Vercel)
-
-1. Push to GitHub.
-2. Import project in Vercel.
-3. Set `JWT_SECRET` and `DATABASE_URL` (e.g. Turso/PlanetScale or file-based SQLite if supported).
-4. Build command: `npm run build` (runs `prisma generate`).
-5. Run `prisma db push` and `db:seed` once against production DB.
-
-## Design
-
-Brand colors: **black** (`#0a0a0a`) and **green** (`#019a51`).
