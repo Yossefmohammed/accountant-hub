@@ -1,0 +1,157 @@
+.page {
+  padding: 2rem 0 3rem;
+}
+
+.back {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-gray-600);
+  margin-bottom: 1.5rem;
+}
+
+.back:hover {
+  color: var(--color-green);
+}
+
+.layout {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr 360px;
+    align-items: start;
+  }
+}
+
+.main {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-green-dark);
+  background: var(--color-green-light);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+}
+
+.main h1 {
+  font-size: clamp(1.5rem, 3vw, 1.85rem);
+  line-height: 1.25;
+  margin-bottom: 0.35rem;
+}
+
+.company {
+  font-weight: 600;
+  color: var(--color-gray-600);
+  margin-bottom: 1.25rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1.25rem 0;
+  margin-bottom: 1.25rem;
+  border-top: 1px solid var(--color-gray-100);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+@media (min-width: 640px) {
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stats dt {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-gray-400);
+}
+
+.stats dd {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.section {
+  margin-top: 1.5rem;
+}
+
+.section h2 {
+  font-size: 1.05rem;
+  margin-bottom: 0.65rem;
+}
+
+.description {
+  color: var(--color-gray-800);
+  white-space: pre-wrap;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.skills li {
+  background: var(--color-gray-100);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.attachments {
+  padding: 0.85rem 1rem;
+  background: var(--color-gray-50);
+  border-left: 3px solid var(--color-green);
+  border-radius: 0 8px 8px 0;
+  color: var(--color-gray-600);
+  font-size: 0.9rem;
+}
+
+.bidPanel {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bidPanel h2 {
+  font-size: 1.1rem;
+}
+
+.closedNote,
+.loginPrompt {
+  color: var(--color-gray-600);
+  font-size: 0.95rem;
+}
+
+.bidActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}

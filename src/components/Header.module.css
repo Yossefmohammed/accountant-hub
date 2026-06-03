@@ -1,0 +1,68 @@
+.header {
+  background: var(--color-black);
+  color: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.logoMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--color-green);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.nav {
+  display: none;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  color: var(--color-green);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.userName {
+  font-size: 0.9rem;
+  color: var(--color-gray-400);
+  margin-right: 0.25rem;
+}
+
+.muted {
+  color: var(--color-gray-400);
+}
+
+@media (min-width: 640px) {
+  .nav {
+    display: flex;
+  }
+}

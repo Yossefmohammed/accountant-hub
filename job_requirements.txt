@@ -1,0 +1,115 @@
+Build  a  small  Accountant  Hub  project,  similar  to  Upwork,  where  companies  post  accounting  
+jobs
+ 
+and
+ 
+accountants
+ 
+can
+ 
+browse
+ 
+jobs,
+ 
+view
+ 
+details,
+ 
+and
+ 
+apply
+ 
+with
+ 
+a
+ 
+bid.
+ 
+Objective  
+We  want  to  evaluate  your  ability  to  work  as  a  solo  builder  who  can  think  through  the  product,  
+design
+ 
+the
+ 
+UI/UX,
+ 
+build
+ 
+the
+ 
+frontend,
+ 
+backend,
+ 
+database,
+ 
+and
+ 
+deploy
+ 
+the
+ 
+project.
+ 
+You  are  responsible  for:  
+●  UI/UX  thinking  ●  Frontend  implementation  ●  Backend  implementation  ●  Database  structure  ●  API  design  ●  Deployment  ●  Clean  code  and  business  logic  
+Task  Description  
+Build  a  web  application  called  Accountant  Hub .  
+The  platform  should  allow  accountants  to  find  accounting  jobs  and  submit  bids  to  complete  
+those
+ 
+jobs.
+ 
+Required  Features  
+1.  Jobs  Listing  Page  
+Create  a  page  that  displays  available  accounting  jobs.  
+Each  job  card  should  show:  
+●  Job  title  ●  Company/client  name  ●  Short  description  ●  Budget  range  ●  Deadline  ●  Job  category  ●  Number  of  bids  received  ●  Posted  date  ●  Status:  Open  /  Closed  
+
+The  page  should  include  basic  filters  such  as:  
+●  Search  by  job  title  ●  Filter  by  category  ●  Filter  by  budget  range  ●  Sort  by  newest  /  highest  budget  
+2.  Job  Details  Page  
+When  the  accountant  clicks  on  a  job,  they  should  see  a  detailed  job  page.  
+The  page  should  include:  
+●  Full  job  description  ●  Client/company  information  ●  Required  skills  ●  Expected  delivery  time  ●  Budget  ●  Attachments  placeholder,  if  any  ●  Existing  bids  count  ●  Apply  /  Submit  Bid  button  
+3.  Submit  Bid  Flow  
+As  an  accountant,  I  should  be  able  to  apply  for  a  job  by  submitting  a  bid.  
+The  bid  form  should  include:  
+●  Proposed  price  ●  Estimated  delivery  time  ●  Cover  letter  /  proposal  message  ●  Relevant  experience  summary  
+After  submitting,  the  system  should  save  the  bid  and  show  a  success  message.  
+The  same  accountant  should  not  be  able  to  submit  more  than  one  bid  for  the  same  job.  
+4.  Basic  Authentication  
+Create  simple  authentication  for  accountants.  
+Required:  
+●  Register  ●  Login  ●  Logout  
+
+●  Only  logged-in  accountants  can  submit  bids  
+Admin/client  authentication  is  not  required,  but  you  may  seed  sample  jobs  in  the  database.  
+Technical  Requirements  
+Preferred  stack:  
+●  Frontend:  React  /  Next.js  ●  Backend:  Laravel  ●  Database:  MySQL  ●  Deployment:  Any  live  deployment  method  
+You  may  use  another  stack  only  if  you  explain  why.  
+Database  Requirements  
+Suggested  entities:  
+●  Users  ●  Jobs  ●  Job  Categories  ●  Bids  
+Important  relationships:  
+●  A  job  belongs  to  a  category  ●  A  job  has  many  bids  ●  A  user/accountant  can  submit  many  bids  ●  A  user  can  submit  only  one  bid  per  job  
+UI/UX  Expectations  
+The  design  should  be  clean,  modern,  and  easy  to  use.  
+We  will  evaluate:  
+●  Layout  quality  ●  Spacing  and  typography  ●  Mobile  responsiveness  ●  Clear  job  cards  ●  Clear  job  details  page  ●  Simple  and  smooth  bid  submission  flow  ●  Good  empty  states  and  validation  messages  
+
+Colors  to  use  :  Black  ,  #019a51   
+Backend  Expectations  
+We  will  evaluate:  
+●  Clean  API  structure  ●  Proper  validation  ●  Authentication  protection  ●  Correct  database  relationships  ●  Preventing  duplicate  bids  ●  Proper  error  handling  ●  Clean  and  readable  code  
+Bonus  Points  
+●  Dashboard  page  showing  my  submitted  bids  ●  Job  status  handling:  Open  /  Closed  ●  Pagination  for  job  listing  ●  Better  filtering  and  sorting  ●  Reusable  UI  components  ●  API  Resources  /  clean  response  formatting  ●  Deployment  with  live  URL  ●  README  with  setup  instructions  ●  Seeded  demo  data  
+Deliverables  
+Please  submit:  
+●  GitHub  repository  link  ●  Live  demo  URL  ●  Test  accountant  login  credentials  ●  README  file  including:  ○  Project  overview  ○  Tech  stack  used  ○  Setup  instructions  ○  How  to  run  the  project  locally  ○  API  endpoints  ○  Any  assumptions  made  
+Evaluation  Criteria  
+
+We  will  evaluate  you  based  on:  
+●  Product  thinking  ●  UI/UX  quality  ●  Frontend  implementation  ●  Backend  implementation  ●  Database  design  ●  Code  organization  ●  Business  logic  correctness  ●  Deployment  quality  ●  Attention  to  detail  ●  Ability  to  work  independently  as  a  solo  developer  
+ 
